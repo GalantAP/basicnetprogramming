@@ -43,7 +43,7 @@ app.get('/infoCuaca', (req, res) => {
 app.get('/bantuan', (req, res) => {
     res.render('bantuan', {
         judul: 'Halaman Bantuan',
-        teksBantuan: 'Jika Anda memerlukan bantuan, silakan hubungi kami melalui halaman kontak.'
+        nama: 'Galant Anefsyah Pratama'
     });
 });
 

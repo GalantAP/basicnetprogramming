@@ -1,6 +1,88 @@
+/* Body dengan tema gelap */
+body {
+    color: #f5f5f5; /* Warna teks terang */
+    background-color: #1a1a1a; /* Latar belakang gelap */
+    font-family: Arial, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Konten utama */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #2b2b2b; /* Latar belakang konten */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+}
+
+/* Judul */
 h1 {
-    color: grey;
-    }
-    img {
+    color: #e0e0e0; /* Warna abu terang */
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* Gambar */
+img {
     width: 250px;
-    }
+    border-radius: 8px; /* Gambar dengan sudut membulat */
+}
+
+/* Footer */
+footer {
+    color: #bbbbbb; /* Teks footer terang */
+    border-top: 1px solid #444444; /* Garis pembatas abu gelap */
+    margin-top: 16px;
+    padding: 16px 0;
+    text-align: center; /* Teks di tengah */
+    display: flex; /* Flexbox untuk posisi konten */
+    justify-content: center; /* Posisikan konten di tengah horizontal */
+    align-items: center; /* Posisikan konten di tengah vertikal */
+    background-color: #1f1f1f; /* Latar belakang footer sedikit lebih gelap */
+    border-radius: 0 0 10px 10px; /* Footer membulat di sudut bawah */
+}
+
+/* Header */
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+/* Link dalam header */
+header a {
+    color: #61dafb; /* Warna link biru terang */
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline; /* Efek underline saat dihover */
+}
+
+/* Gambar dalam konten utama */
+.portrait {
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Efek bayangan untuk gambar */
+}
+
+/* Tombol */
+button {
+    background-color: #333;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efek transisi saat dihover */
+}
+
+button:hover {
+    background-color: #444; /* Warna tombol saat dihover */
+}
