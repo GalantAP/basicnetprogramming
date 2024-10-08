@@ -47,6 +47,14 @@ app.get('/bantuan', (req, res) => {
     });
 });
 
+app.get('*', (req, res) => {
+    res.render('404', {
+        judul: '404',
+        nama: 'Galant Anefsyah Pratama',
+        pesanKesalahan: 'Halaman tidak ditemukan'
+    })
+})
+
 // Menjalankan server di port 4000
 app.listen(4000, () => {
     console.log('Server berjalan pada port 4000.');

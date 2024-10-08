@@ -72,6 +72,22 @@ header a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Efek bayangan untuk gambar */
 }
 
+/* Tombol untuk tautan kembali */
+.button {
+    display: inline-block; /* Agar tautan berfungsi seperti tombol */
+    background-color: #61dafb; /* Warna tombol */
+    color: #1a1a1a; /* Warna teks tombol */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: background-color 0.3s ease; /* Efek transisi */
+    margin-top: 20px; /* Jarak atas untuk tombol */
+}
+
+.button:hover {
+    background-color: #52b0e7; /* Warna tombol saat dihover */
+}
+
 /* Tombol */
 button {
     background-color: #333;

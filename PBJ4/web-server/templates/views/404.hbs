@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Halaman Tidak Ditemukan</title>
+    <link rel="icon" href="/img/cuaca.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js" defer></script> <!-- Menambahkan 'defer' untuk memuat skrip setelah halaman selesai dimuat -->
+</head>
+<body>
+    <div class="main-content">
+        {{> header}} <!-- Menggunakan partial header -->
+        <h1>404 - Halaman Tidak Ditemukan</h1> <!-- Menambahkan judul yang jelas -->
+        <p>{{pesanKesalahan}}</p> <!-- Menampilkan pesan kesalahan -->
+        <a href="/" class="button">Kembali ke Halaman Utama</a> <!-- Tautan untuk kembali -->
+    </div>
+    {{> footer}} <!-- Menggunakan partial footer -->
+</body>
+</html>
