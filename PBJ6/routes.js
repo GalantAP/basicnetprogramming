@@ -1,11 +1,15 @@
 'use strict';
 
-module.exports = function (app) {
-    var routeBiodata = require('./controller/usercontroller');
+module.exports = (app) => {
+    const userController = require('./controller/usercontroller');
 
-    // Route untuk mendapatkan semua biodata
-    app.route('/pbj6').get(routeBiodata.showAllBiodata);
+    app.route('/biodata')
+        .get(userController.showAllBiodata)
+        .post(userController.addNewBiodata)
+        .delete(userController.deleteuser);
 
-    // Route untuk mendapatkan biodata berdasarkan ID
-    app.route('/pbj6/:id').get(routeBiodata.showBiodataById);
+    app.route('/biodata/:id')
+        .get(userController.showBiodataById)
+        .put(userController.updateBiodataById)
+        .delete(userController.deleteuser);
 };

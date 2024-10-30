@@ -1,14 +1,14 @@
 const mysql = require('mysql');
 
-// Buat koneksi ke database
+// Create the connection to the database
 const connection = mysql.createConnection({
-    host: 'localhost',      // Host MySQL (misal, localhost)
-    user: 'root',           // Nama pengguna MySQL
-    password: '',           // Kata sandi MySQL
-    database: 'pbj6'  // Nama database yang Anda buat
+    host: 'localhost',     // Your MySQL host (e.g., localhost)
+    user: 'root',          // Your MySQL username
+    password: '',          // Your MySQL password
+    database: 'pbj6'      // The database you want to connect to.
 });
 
-// Terhubung ke MySQL
+// Connect to MySQLSAZZS
 connection.connect((err) => {
     if (err) {
         console.error('Error connecting to MySQL:', err);
